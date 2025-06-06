@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <main class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="mockup-phone-camera"></div>
+            <div class="mockup-phone-display text-white grid place-content-center">
+
+                <!--login section-->
+                <div class="hero min-h-screen">
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl text-black">
+                        <form class="card-body">
+                            <fieldset class="fieldset">
+                                <label for="phone-number" class="label">Phone</label>
+                                <input id="phone-number" name="phone" type="text" class="input"
+                                    placeholder="Phone number" required />
+
+                                <label for="pin-number" class="label">Pin</label>
+                                <input id="pin-number" name="pin" type="password" class="input"
+                                    placeholder="Enter your pin" required />
+
+                                <div><a href="#" class="link link-hover">Forgot password?</a></div>
+
+                                <button id="btn-login" type="submit" class="btn btn-neutral mt-4">Login</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <script src="js/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <main class="flex justify-center text-black">
+        <div class="mockup-phone bg-base-100 ">
+            <div class="mockup-phone-camera"></div>
+            <div class="mockup-phone-display text-white grid place-content-center">
+                <!--available balance-->
+                <div class="stats shadow">
+                    <div class="stat">
+                        <div class="stat-value text-black">89,400</div>
+                        <div class="stat-desc">21% more than last month</div>
+                    </div>
+                </div>
+
+                <div class="divider text-black"></div>
+                <button class=" btn btn-lg text-black">Add Money</button>
+                <button class="btn btn-lg text-black border-lg">CashOut</button>
+
+                <!--Form section-->
+                <div class="card-body text-black">
+                    <form class="form">
+                        <fieldset class="fieldset">
+                            <label class="label" for="email">Amount </label>
+                            <input type="number" id="amount" name="amount" class="input" placeholder="Amount" required />
+
+                            <label class="label" for="password">Pin</label>
+                            <input type="pin" id="pin-number" name="pin" class="input" placeholder="Enter your Pin"
+                                required />
+
+                
+                            <button type="submit" class="btn btn-neutral mt-4">Add Money</button>
+                        </fieldset>
+                    </form>
+                </div>
+                <!--add money form start-->
+                <!-- add money form end-->
+
+            </div>
+        </div>
+    </main>
+    <script src="js/Home.js"></script>
+
+
+</body>
+
+</html>
