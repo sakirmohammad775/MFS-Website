@@ -17,38 +17,62 @@
                 <!--available balance-->
                 <div class="stats shadow">
                     <div class="stat">
-                        <div class="stat-value text-black">90,000</div>
+                        <div id="account-balance" class="stat-value text-black">90000</div>
                         <div class="stat-desc">21% more than last month</div>
                     </div>
                 </div>
 
                 <div class="divider text-black"></div>
-                <button class=" btn btn-lg text-black">Add Money</button>
-                <button class="btn btn-lg text-black border-lg">CashOut</button>
+                <div>
 
-                <!--Form section-->
-                <div class="card-body text-black">
+                    <button id="btn-show-add-money" class=" btn btn-lg text-black">Add Money</button>
+                    <button id="btn-show-cash-out" class="btn btn-lg text-black border-lg">CashOut</button>
+                </div>
+
+                <!--add money form start-->
+                <div id="add-money-form" class="hidden card-body text-black">
                     <form class="form">
                         <fieldset class="fieldset">
                             <label class="label" for="email">Amount </label>
-                            <input id="input-add-money" type="number" id="amount" name="amount" class="input" placeholder="Amount" required />
+                            <input id="input-add-money" type="number" id="amount" name="amount" class="input"
+                                placeholder="Amount" required />
 
                             <label class="label" for="password">Pin</label>
-                            <input id="input-pin-number" type="pin" id="pin-number" name="pin" class="input" placeholder="Enter your Pin"
-                                required />
+                            <input id="input-pin-number" type="pin" name="pin" class="input"
+                                placeholder="Enter your Pin" required />
 
-                
+
                             <button id="btn-add-money" type="submit" class="btn btn-neutral mt-4">Add Money</button>
                         </fieldset>
                     </form>
                 </div>
-                <!--add money form start-->
                 <!-- add money form end-->
+
+                <!--cash Out form start-->
+                <div  id="cash-out-form" class="card-body text-black">
+                    <form class="form">
+                        <fieldset class="fieldset">
+                            <label class="label" for="email">Amount </label>
+                            <input id="cash-out-balance" type="number" id="amount" name="amount" class="input"
+                                placeholder="Amount" required />
+
+                            <label class="label" for="password">Pin</label>
+                            <input  type="pin" id="input-cash-out-pin" name="pin" class="input"
+                                placeholder="Enter your Pin" required />
+
+
+                            <button id="btn-cashout-money" type="submit" class="btn btn-neutral mt-4">CashOut</button>
+                        </fieldset>
+                    </form>
+                </div>
+                <!-- cash out form end-->
 
             </div>
         </div>
     </main>
     <script src="js/Home.js"></script>
+    <script src="js/CashOut.js"></script>
+    <script src="js/features.js"></script>
 
 
 </body>
